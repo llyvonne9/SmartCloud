@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76EEC6" >
+
+	<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#76EEC6"
+     >
+
+   <RelativeLayout
+       android:id="@+id/relativeLayout12"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView42"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="1px"
+       android:background="#123456"
+       android:paddingBottom="10px"
+       android:paddingLeft="20px"
+       android:paddingRight="20px"
+       android:paddingTop="10px" >
+
+<!--    <TextView
+            android:id="@+id/textView12"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Welcom to join SC" />  --> 
+        
+        <TextView
+            android:id="@+id/textView22"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="26px"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/usernameLogEditTextRegister"
+            android:layout_width="390px"
+            android:layout_height="55px"
+            android:layout_below="@+id/textView22"
+            android:layout_marginTop="6px"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:hint="Enter your username" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView52"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/usernameLogEditTextRegister"
+            android:layout_marginTop="26px"
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/emailLogEditTextRegister"
+            android:layout_width="390px"
+            android:layout_height="55px"
+            android:layout_below="@+id/textView52"
+            android:layout_marginTop="6px"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:hint="Enter your email address" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:textColor="#FFFFFF"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/emailLogEditTextRegister"
+            android:layout_marginTop="16px"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/passwoedRegisterEditText"
+            android:layout_width="390px"
+            android:layout_height="55px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView32"
+            android:layout_marginTop="6px"
+            android:hint="Enter your password"
+            android:background="#FFFFFF"
+            android:inputType="textPassword" />
+        
+        <TextView
+            android:id="@+id/textView4"
+            android:textColor="#FFFFFF"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/passwoedRegisterEditText"
+            android:layout_marginTop="16px"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/passwoedRegisterEditTextConfirm"
+            android:layout_width="390px"
+            android:layout_height="55px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="6px"
+            android:hint="Enter your password again"
+            android:background="#FFFFFF"
+            android:inputType="textPassword" />
+        
+       <Button
+	       android:id="@+id/buttonRegister"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_centerHorizontal="true"
+	       android:layout_below="@+id/passwoedRegisterEditTextConfirm"
+	       android:layout_marginTop="30dp"
+	       android:background="@drawable/buttonselector"
+	       android:text="register" />
+
+       <CheckBox
+           android:id="@+id/isAgreeCheckBox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/buttonRegister"
+           android:layout_below="@+id/passwoedRegisterEditTextConfirm"
+           android:textColor="#FFFFFF"
+           android:textSize="12dp"
+           android:text="I agree with items" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>
